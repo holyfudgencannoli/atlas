@@ -12,6 +12,7 @@
   color: white;
   text-shadow: 2px 1px 4px var(--color-neutral-700);
   margin-right: clamp(1rem, 6vw, 4rem);
+  width: 100%;
 }
 
 #mobile-header {
@@ -39,15 +40,15 @@
   padding-block: 1rem;
   font-size: 1.25rem;
   cursor: pointer;
+  border-radius: 2rem;
+  text-align: center;
 
 
 
 }
 
 .navLink:hover {
-  border-radius: 2rem;
   display: flex;
-  align-items: center;
   color: var(--color-primary-700);
   background-color: var(--color-primary-300);
 }
@@ -296,12 +297,12 @@ a {
     padding-inline: clamp(1rem, 2vw, 2.5rem);
     padding-block: 1rem;
     font-size: 1.25rem;
-
+    border-radius: 2rem;
+    text-align: center;
 
   }
 
   .navLink:hover {
-    border-radius: 2rem;
     display: flex;
     align-items: center;
     color: var(--color-primary-700);

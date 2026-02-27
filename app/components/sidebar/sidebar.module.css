@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 #sidebar-content h1 {
@@ -36,22 +36,25 @@
 
 .navLink{
   color: var(--color-primary-100);
+  margin: 0rem 1rem;
   text-decoration: none;
   text-shadow: 2px 1px 4px var(--color-neutral-700);
-  padding-inline: 0 .5rem;
-  padding-block: 0.5rem;
+  padding: 0.5rem;
   font-size: 0.75rem;
-  width: 100%;
-
-
+  width: 85%;
+  border-radius: 2rem;
+  text-align: center;
 }
 
 .navLink:hover{
-  border-radius: 2rem;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   color: var(--color-primary-700);
   background-color: var(--color-primary-300);
+  width: 85%;
+  text-align: center;
+
+
 }
 
 a {
