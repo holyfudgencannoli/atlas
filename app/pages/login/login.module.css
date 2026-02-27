@@ -1,0 +1,77 @@
+#loginPageMain {
+  height: auto;
+  padding-block: 2rem;
+  text-align: center;
+}
+
+.loginBtn {
+  background-color: var(--color-primary-600);
+  filter: drop-shadow(3px 5px var(--color-primary-800));
+  margin: 0;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 25%;
+  margin-top: 2rem;
+  align-self: center;
+  color: var(--color-primary-100);
+  border: 0px;
+  font-size: 1rem;
+
+}
+
+.loginBtn:hover {
+  background-color: var(--color-primary-100);
+  filter: drop-shadow(3px 5px var(--color-primary-800));
+  margin: 0;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 25%;
+  margin-top: 2rem;
+  align-self: center;
+  color: var(--color-primary-700);
+  cursor: pointer;
+
+}
+
+.loginFormControl {
+  background-color: var(--color-primary-600);
+  color: var(--color-primary-100);
+  border: 1px solid var(--color-primary-700);
+  filter: drop-shadow(3px 5px var(--color-primary-800));
+  padding: 1rem;
+  margin: 0.5rem;
+  width: 33%;
+  border-radius: 1rem;
+  margin-block: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+
+
+}
+
+#login-page-main p{
+  font-size: 1.25rem;
+  color: var(--color-primary-700);
+  text-shadow: 2px 1px 4px var(--color-neutral-600);
+}
+
+.loginFormLabel {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.loginFormControl:focus {
+  border: 1px solid var(--color-primary-100);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+

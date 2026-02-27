@@ -1,0 +1,8 @@
+#home-page-main {
+  background-color: var(--color-neutral-400);
+  color: var(--color-primary-100);
+  text-shadow: 2px 1px 4px var(--color-neutral-600);
+  height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}

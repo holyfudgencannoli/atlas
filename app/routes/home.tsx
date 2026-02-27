@@ -1,10 +1,11 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
+import HomePage from "~/pages/home/home.index";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Home | Atlas Project Manager" },
+    { name: "description", content: "Welcome to Atlas Project Manager!" },
   ];
 }
 
@@ -13,5 +14,7 @@ export function loader({ context }: Route.LoaderArgs) {
 }
 
 export default function Home({ loaderData }: Route.ComponentProps) {
-  return <Welcome message={loaderData.message} />;
+  return (
+    <HomePage />
+  );
 }

@@ -1,0 +1,13 @@
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 12.5%;
+}
+
+.dashboard{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 87.5%;
+}

@@ -1,0 +1,318 @@
+#header-main {
+  background-color: var(--color-primary-600);
+  color: white;
+  height: auto;
+  padding: 1.25rem;
+  margin-bottom: 0;
+  border-bottom: 2px solid var(--color-primary-700);
+}
+
+#header-content h1 {
+  text-align: left;
+  color: white;
+  text-shadow: 2px 1px 4px var(--color-neutral-700);
+  margin-right: clamp(1rem, 6vw, 4rem);
+}
+
+#mobile-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  background-color: var(--color-primary-600);
+  color: white;
+  width: 100%;
+}
+
+.navLink{
+  color: var(--color-primary-100);
+  text-decoration: none;
+  text-shadow: 2px 1px 4px var(--color-neutral-700);
+  padding-inline: 2.5rem;
+  padding-block: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+
+
+
+}
+
+.navLink:hover {
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  color: var(--color-primary-700);
+  background-color: var(--color-primary-300);
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (width >= 576px) {
+
+  #header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #header-content h1 {
+    text-align: left;
+    margin-right: clamp(1rem, 6vw, 4rem);
+    color: white;
+    text-shadow: 2px 1px 4px var(--color-neutral-700);
+
+
+  }
+  #header-main {
+    background-color: var(--color-primary-600);
+    color: white;
+    height: auto;
+    padding: 1.25rem;
+    margin-bottom: 0;
+    border-bottom: 2px solid var(--color-primary-700);
+  }
+
+  .navLink{
+    color: var(--color-primary-100);
+    text-decoration: none;
+    text-shadow: 2px 1px 4px var(--color-neutral-700);
+    padding-inline: clamp(1rem, 2vw, 2rem);
+    padding-block: 1rem;
+    font-size: 1.25rem;
+    width: 100%;
+  }
+
+  .navLink:hover {
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--color-primary-700);
+    background-color: var(--color-primary-300);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+  
+}
+
+@media (width >= 768px) {
+  #header-main {
+    background-color: var(--color-primary-600);
+    color: white;
+    height: auto;
+    padding: 1.25rem;
+    margin-bottom: 0;
+    border-bottom: 2px solid var(--color-primary-700);
+  }
+
+  #header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #header-content h1 {
+    margin-right: clamp(10rem, 25vw, 30rem);
+    /* margin-right: 2rem; */
+    color: white;
+    text-shadow: 2px 1px 4px var(--color-neutral-700);
+
+
+  }
+
+  .navLink{
+    color: var(--color-primary-100);
+    text-decoration: none;
+    text-shadow: 2px 1px 4px var(--color-neutral-700);
+    /* padding-inline: clamp(0.5rem, 2vw, 2rem); */
+    padding-inline: clamp(1rem, 2vw, 2.5rem);
+    padding-block: 1rem;
+    font-size: 1.25rem;
+    width: 100%;
+  }
+
+
+  .navLink:hover {
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--color-primary-700);
+    background-color: var(--color-primary-300);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+}
+
+
+@media (width >= 992px) {
+  #header-main {
+    background-color: var(--color-primary-600);
+    color: white;
+    height: auto;
+    padding: 1.25rem;
+    margin-bottom: 0;
+    border-bottom: 2px solid var(--color-primary-700);
+  }
+
+    #header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #header-content h1 {
+    margin-right: clamp(15rem, 40vw, 35rem);
+    color: white;
+    text-shadow: 2px 1px 4px var(--color-neutral-700);
+
+
+  }
+
+  .navLink{
+    color: var(--color-primary-100);
+    text-decoration: none;
+    text-shadow: 2px 1px 4px var(--color-neutral-700);
+    padding-inline: clamp(1rem, 2vw, 2.5rem);
+    padding-block: 1rem;
+    font-size: 1.25rem;
+
+
+  }
+
+  .navLink:hover {
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--color-primary-700);
+    background-color: var(--color-primary-300);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+}
+
+
+@media (width >= 1200px) {
+  #header-main {
+    background-color: var(--color-primary-600);
+    color: white;
+    height: auto;
+    padding: 1.25rem;
+    margin-bottom: 0;
+    border-bottom: 2px solid var(--color-primary-700);
+  }
+
+    #header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #header-content h1 {
+    margin-right: clamp(20rem, 45vw, 40rem);
+    color: white;
+    text-shadow: 2px 1px 4px var(--color-neutral-700);
+
+
+  }
+
+  .navLink{
+    color: var(--color-primary-100);
+    text-decoration: none;
+    text-shadow: 2px 1px 4px var(--color-neutral-700);
+    padding-inline: clamp(1rem, 2vw, 2rem);
+    padding-block: 1rem;
+    font-size: 1.25rem;
+
+
+  }
+
+  .navLink:hover {
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--color-primary-700);
+    background-color: var(--color-primary-300);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+}
+
+@media (width >= 1400px) {
+  #header-main {
+    background-color: var(--color-primary-600);
+    color: white;
+    height: auto;
+    padding: 1.25rem;
+    margin-bottom: 0;
+    border-bottom: 2px solid var(--color-primary-700);
+
+  }
+
+  #header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #header-content h1 {
+    margin-right: clamp(20rem, 45vw, 40rem);
+    /* margin-right: 40rem; */
+    color: white;
+    text-shadow: 2px 1px 4px var(--color-neutral-700);
+
+
+  }
+
+  .navLink{
+    color: var(--color-primary-100);
+    text-decoration: none;
+    text-shadow: 2px 1px 4px var(--color-neutral-700);
+    padding-inline: clamp(1rem, 2vw, 2.5rem);
+    padding-block: 1rem;
+    font-size: 1.25rem;
+
+
+  }
+
+  .navLink:hover {
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--color-primary-700);
+    background-color: var(--color-primary-300);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+}
+
+

@@ -1,0 +1,77 @@
+#create-account-page-main {
+  height: auto;
+  padding-block: 2rem;
+  text-align: center;
+}
+
+.create-account-btn {
+  background-color: var(--color-primary-600);
+  filter: drop-shadow(3px 5px var(--color-primary-800));
+  margin: 0;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 25%;
+  margin-top: 2rem;
+  align-self: center;
+  color: var(--color-primary-100);
+  border: 0px;
+  font-size: 1rem;
+
+}
+
+.create-account-btn:hover {
+  background-color: var(--color-primary-100);
+  filter: drop-shadow(3px 5px var(--color-primary-800));
+  margin: 0;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 25%;
+  margin-top: 2rem;
+  align-self: center;
+  color: var(--color-primary-700);
+  cursor: pointer;
+
+}
+
+.create-account-form-control {
+  background-color: var(--color-primary-600);
+  color: var(--color-primary-100);
+  border: 1px solid var(--color-primary-700);
+  filter: drop-shadow(3px 5px var(--color-primary-800));
+  padding: 1rem;
+  margin: 0.5rem;
+  width: 33%;
+  border-radius: 1rem;
+  margin-block: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+
+
+}
+
+#create-account-page-main p{
+  font-size: 1.25rem;
+  color: var(--color-primary-700);
+  text-shadow: 2px 1px 4px var(--color-neutral-600);
+}
+
+.create-account-form-label {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.create-account-form-control:focus {
+  border: 1px solid var(--color-primary-100);
+}
+
+.create-account-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
