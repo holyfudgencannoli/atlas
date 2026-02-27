@@ -1,26 +1,19 @@
 import React from 'react';
-import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+import { Button, Card, Col, Container, Row, Tab, Tabs } from 'react-bootstrap';
 import ProtectedRoute from '~/hooks/protected-route';
+import styles from './dashboard.module.css'
 
 
-export default function DashboardPage() {    
-  const onSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => { 
-    e.preventDefault();
-    // await login(email, password);
-    // await fetch("https://atlas-api.moshimoshi8246.workers.dev/api/me")
-    await fetch("http://localhost:8787/api/v1/auth/login")
-  };
-
-
+export default function DashboardPage() {'card-display'    
   return (
-    <div>
-      <div style={{ padding: '4rem' }}>
+    <div id={styles['dashboard-main']}>
+      <div style={{ padding: '2rem' }}>
         <h1>Dashboard</h1>
         <p>Welcome to your dashboard! Here you can view your projects, manage your account, and access support resources.</p>
-        <Container>
-          <Row>
-            <Col> 
-              <Card style={{ width: '18rem', backgroundColor: '#f8f9fa', padding : '1rem', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', margin: '1rem auto' }}>
+        <Container  id={styles['card-display']}>
+          <Row >
+            <Col className={styles.card} xs={12} sm={12} md={6} lg={4} xl={4} xxl={4}> 
+              <Card >
                 <Card.Body>
                   <Card.Title>Project 1</Card.Title>
                   <Card.Text>
@@ -29,8 +22,8 @@ export default function DashboardPage() {
                 </Card.Body>
               </Card>
             </Col>
-            <Col>
-              <Card style={{ width: '18rem', backgroundColor: '#f8f9fa', padding : '1rem', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', margin: '1rem auto' }}>
+            <Col className={styles.card} xs={12} sm={12} md={6} lg={4} xl={4} xxl={4}> 
+              <Card>
                 <Card.Body>
                   <Card.Title>Project 1</Card.Title>
                   <Card.Text>
@@ -39,40 +32,8 @@ export default function DashboardPage() {
                 </Card.Body>
               </Card>
             </Col>
-            <Col> 
-              <Card style={{ width: '18rem', backgroundColor: '#f8f9fa', padding : '1rem', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', margin: '1rem auto' }}>
-                <Card.Body>
-                  <Card.Title>Project 1</Card.Title>
-                  <Card.Text>
-                    This is a brief description of Project 1. It includes details about the project's goals, timeline, and team members.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-          <Row>
-            <Col> 
-              <Card style={{ width: '18rem', backgroundColor: '#f8f9fa', padding : '1rem', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', margin: '1rem auto' }}>
-                <Card.Body>
-                  <Card.Title>Project 1</Card.Title>
-                  <Card.Text>
-                    This is a brief description of Project 1. It includes details about the project's goals, timeline, and team members.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col>
-              <Card style={{ width: '18rem', backgroundColor: '#f8f9fa', padding : '1rem', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', margin: '1rem auto' }}>
-                <Card.Body>
-                  <Card.Title>Project 1</Card.Title>
-                  <Card.Text>
-                    This is a brief description of Project 1. It includes details about the project's goals, timeline, and team members.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col> 
-              <Card style={{ width: '18rem', backgroundColor: '#f8f9fa', padding : '1rem', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', margin: '1rem auto' }}>
+            <Col className={styles.card} xs={12} sm={12} md={6} lg={4} xl={4} xxl={4}> 
+              <Card>
                 <Card.Body>
                   <Card.Title>Project 1</Card.Title>
                   <Card.Text>
@@ -82,7 +43,78 @@ export default function DashboardPage() {
               </Card>
             </Col>
           </Row>
-        </Container>
+          <Row>
+            <Col className={styles.card} xs={12} sm={12} md={6} lg={4} xl={4} xxl={4}> 
+              <Card>
+                <Card.Body>
+                  <Card.Title>Project 1</Card.Title>
+                  <Card.Text>
+                    This is a brief description of Project 1. It includes details about the project's goals, timeline, and team members.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col className={styles.card} xs={12} sm={12} md={6} lg={4} xl={4} xxl={4}>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Project 1</Card.Title>
+                  <Card.Text>
+                    This is a brief description of Project 1. It includes details about the project's goals, timeline, and team members.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col className={styles.card} xs={12} sm={12} md={6} lg={4} xl={4} xxl={4}> 
+              <Card>
+                <Card.Body>
+                  <Card.Title>Project 1</Card.Title>
+                  <Card.Text>
+                    This is a brief description of Project 1. It includes details about the project's goals, timeline, and team members.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Container>          
+
+        <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
+          <Tab eventKey="home" title="Home">
+            <p>This is the home tab content. It provides an overview of your dashboard and quick access to important features.</p>
+            <p>This is the home tab content. It provides an overview of your dashboard and quick access to important features.</p>
+            <p>This is the home tab content. It provides an overview of your dashboard and quick access to important features.</p>
+            <p>This is the home tab content. It provides an overview of your dashboard and quick access to important features.</p>
+            <p>This is the home tab content. It provides an overview of your dashboard and quick access to important features.</p>
+            <p>This is the home tab content. It provides an overview of your dashboard and quick access to important features.</p>
+            <p>This is the home tab content. It provides an overview of your dashboard and quick access to important features.</p>
+            <p>This is the home tab content. It provides an overview of your dashboard and quick access to important features.</p>
+            <p>This is the home tab content. It provides an overview of your dashboard and quick access to important features.</p>
+            <p>This is the home tab content. It provides an overview of your dashboard and quick access to important features.</p>
+            <p>This is the home tab content. It provides an overview of your dashboard and quick access to important features.</p>
+          </Tab>
+          <Tab eventKey="profile" title="Profile">
+            <p>This is the profile tab content. Here you can view and edit your personal information, change your password, and manage your account settings.</p>
+            <p>This is the profile tab content. Here you can view and edit your personal information, change your password, and manage your account settings.</p>
+            <p>This is the profile tab content. Here you can view and edit your personal information, change your password, and manage your account settings.</p>
+            <p>This is the profile tab content. Here you can view and edit your personal information, change your password, and manage your account settings.</p>
+            <p>This is the profile tab content. Here you can view and edit your personal information, change your password, and manage your account settings.</p>
+            <p>This is the profile tab content. Here you can view and edit your personal information, change your password, and manage your account settings.</p>
+            <p>This is the profile tab content. Here you can view and edit your personal information, change your password, and manage your account settings.</p>
+            <p>This is the profile tab content. Here you can view and edit your personal information, change your password, and manage your account settings.</p>
+            <p>This is the profile tab content. Here you can view and edit your personal information, change your password, and manage your account settings.</p>
+            <p>This is the profile tab content. Here you can view and edit your personal information, change your password, and manage your account settings.</p>
+            <p>This is the profile tab content. Here you can view and edit your personal information, change your password, and manage your account settings.</p>
+            <p>This is the profile tab content. Here you can view and edit your personal information, change your password, and manage your account settings.</p>
+          </Tab>
+          <Tab eventKey="contact" title="Contact">
+            <p>This is the contact tab content. If you need assistance or have any questions, please reach out to our support team through this tab.</p>
+            <p>This is the contact tab content. If you need assistance or have any questions, please reach out to our support team through this tab.</p>
+            <p>This is the contact tab content. If you need assistance or have any questions, please reach out to our support team through this tab.</p>
+            <p>This is the contact tab content. If you need assistance or have any questions, please reach out to our support team through this tab.</p>
+            <p>This is the contact tab content. If you need assistance or have any questions, please reach out to our support team through this tab.</p>
+            <p>This is the contact tab content. If you need assistance or have any questions, please reach out to our support team through this tab.</p>
+            <p>This is the contact tab content. If you need assistance or have any questions, please reach out to our support team through this tab.</p>
+          </Tab>
+        </Tabs>
       </div>
     {/* <svg width={width} height={height}>
       {data.map((d, i) => {
@@ -100,7 +132,6 @@ export default function DashboardPage() {
         );
       })}
     </svg> */}
-    <Button onClick={(e) => onSubmit(e)}>Submit</Button>
     </div>
 
   );

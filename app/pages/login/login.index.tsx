@@ -7,12 +7,26 @@ import { useAuth } from "~/hooks/auth-context";
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const{ login } = useAuth();
+  const{ login  } = useAuth();
 
   const onSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => { 
     e.preventDefault();
     
     await login(email, password);
+    // try {
+    //   await fetch("http://localhost:8787/api/v1/auth/register", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify({ email, password }),
+    //     credentials: "include",
+    //   });
+    //   alert("Registration successful! Please log in.");
+    // } catch (error) {
+    //   console.error("Error during registration:", error);
+    //   alert("Registration failed. Please try again.");
+    // }
 
   };
 
