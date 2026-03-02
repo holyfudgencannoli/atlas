@@ -38,7 +38,8 @@ export default function Sidebar() {
         </Button>
         {membersOpen && (
           <>
-            <NavLink className={styles.navLink} href="/">Members</NavLink>
+            <NavLink className={styles.navLink} href="/app/members">Members</NavLink>
+            <NavLink className={styles.navLink} href="/app/members/invite">Invite Members</NavLink>
           </>
         )}
         <Button className={styles.sidebarBtn} onClick={() => setAccountOpen(!accountOpen)}>
@@ -46,7 +47,7 @@ export default function Sidebar() {
         </Button>
         {accountOpen && (
           <>
-            <NavLink className={styles.navLink} href="/">Account</NavLink>
+            <NavLink className={styles.navLink} href="/app/account">Account</NavLink>
             <Button className={styles.navLink} onClick={(e) => {
               e.preventDefault();
               logout(sessionId)
@@ -60,7 +61,7 @@ export default function Sidebar() {
         </Button>
         {supportOpen && (
           <>
-            <NavLink className={styles.navLink} href="/pricing">Support</NavLink>
+            <NavLink className={styles.navLink} href="/app/support">Support</NavLink>
           </>
         )}
       </div>

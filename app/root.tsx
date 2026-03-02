@@ -58,13 +58,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  const { pathname } = useLocation();
-  const inAppSpace = pathname.startsWith("/app");
-  console.log("Current path:", pathname, "In app space:", inAppSpace);
   return (
-    <>
-      <Outlet />
-    </>
+    <Outlet />
   );
 }
 

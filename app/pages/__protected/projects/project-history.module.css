@@ -1,0 +1,25 @@
+.container {
+  padding: 1rem 0.5rem;
+}
+
+.toolbar {
+  margin-bottom: 1rem;
+}
+
+.list {
+  display: block;
+}
+
+.item {
+  transition: box-shadow 150ms ease-in-out, transform 150ms ease-in-out;
+}
+.item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.empty {
+  background: #fbfbfb;
+  border: 1px dashed #e6e6e6;
+  padding: 2rem;
+}

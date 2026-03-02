@@ -11,13 +11,20 @@ export default [
   layout("pages/__protected/layout/index.tsx", [
     ...prefix("app", [
       index("routes/protected-routes/dashboard.tsx"),
-    ...prefix("projects", [
-      index("routes/protected-routes/projects/project-history.tsx"),
-      route("new", "routes/protected-routes/projects/new-project.tsx"),
-      route("manage", "routes/protected-routes/projects/manage-projects.tsx"),
+      ...prefix("projects", [
+        index("routes/protected-routes/projects/project-history.tsx"),
+        route("new", "routes/protected-routes/projects/new-project.tsx"),
+        route("manage", "routes/protected-routes/projects/manage-projects.tsx"),
+      ]),
+      ...prefix("members", [
+        route("invite", "routes/protected-routes/members/invite-members.tsx")
+      ]),
+      route("support", "routes/protected-routes/support/support.tsx"),
+      ...prefix("account", [
+        index("routes/protected-routes/account/account-details.tsx"),
+      ]),
 
     ]),
-  ]),
 
     // layout("routes/protected-routes/dashboard.tsx", [ ]),
   ]),

@@ -9,9 +9,8 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const{ login  } = useAuth();
 
-  const onSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => { 
+  const onSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
     await login(email, password);
     // try {
     //   await fetch("http://localhost:8787/api/v1/auth/register", {
@@ -35,7 +34,7 @@ export default function LoginPage() {
       <h1>Login Page</h1>
       <p>Please enter your credentials to log in.</p>
       <div id={styles['loginContainer']}>
-        <Form id={styles['loginForm']}>
+        <Form id={styles['loginForm']} onSubmit={onSubmit}>
           <InputGroup className={styles.inputGroup}>
             <Form.Label htmlFor="email" className={styles.loginFormLabel}>Email</Form.Label>
             <Form.Control 
@@ -52,7 +51,7 @@ export default function LoginPage() {
               onChange={(e) => setPassword(e.target.value)}
             />
             <NavLink className={styles.createAccountLink} href="/create-account">Don't have an account? Create one here.</NavLink>
-            <Button className={styles.loginBtn} onClick={(e) => onSubmit(e)}>Submit</Button>
+            <Button className={styles.loginBtn} type="submit">Submit</Button>
           </InputGroup>
         </Form>
       </div>
