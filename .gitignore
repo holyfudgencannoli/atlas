@@ -2,6 +2,8 @@
 .env
 /node_modules/
 *.tsbuildinfo
+server-address.ts
+
 
 # React Router
 /.react-router/

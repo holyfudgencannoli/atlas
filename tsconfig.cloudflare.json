@@ -7,7 +7,7 @@
     "app/**/.client/**/*",
     "workers/**/*",
     "worker-configuration.d.ts"
-  ],
+, "server-address.ts"  ],
   "compilerOptions": {
     "composite": true,
     "strict": true,

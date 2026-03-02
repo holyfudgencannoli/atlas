@@ -56,10 +56,14 @@ body {
   padding: 0;
   gap: 0;
   /* background-color: var(--color-neutral-100); */
-  color: var(--color-primary-700);
-  background-color: var(--color-primary-200);
+  color: var(--color-primary-100);
+  background-color: var(--color-primary-800);
   /* color: var(--color-primary-100); */
   text-shadow: 2px 1px 4px var(--color-neutral-600);
+}
+
+p {
+  color: var(--color-primary-300);
 }
 
 .container-fluid {

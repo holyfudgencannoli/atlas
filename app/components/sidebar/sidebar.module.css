@@ -41,9 +41,9 @@
   text-shadow: 2px 1px 4px var(--color-neutral-700);
   padding: 0.5rem;
   font-size: 0.75rem;
-  width: 85%;
+  width: 80%;
   border-radius: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .navLink:hover{
@@ -51,10 +51,10 @@
   /* align-items: center; */
   color: var(--color-primary-700);
   background-color: var(--color-primary-300);
-  width: 85%;
+  /* width: 85%; */
   text-align: center;
-
-
+  transform: translateX(10px);
+  transition: all 0.3s ease;
 }
 
 a {
@@ -99,12 +99,15 @@ a {
   #sidebar-main {
     background-color: var(--color-primary-600);
     color: white;
-    /* width: auto; */  
+    width: 100%;  
     margin-bottom: 0;
     border-right: 2px solid var(--color-primary-700);
     padding-inline: 0;
   }
 
-  
+  .navLink{
+    width: 90%;
+  }
+
 }
 
