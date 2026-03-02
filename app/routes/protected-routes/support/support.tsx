@@ -1,5 +1,5 @@
 import DashboardPage from "~/pages/__protected/dashboard/dashboard.index";
-import type { Route } from "./+types/account-details";
+import type { Route } from "./+types/support";
 import NewProjectPage from "~/pages/__protected/projects/new-project";
 import ProtectedRoute from "~/hooks/protected-route";
 import InviteMemberPage from "~/pages/__protected/members/invite-member";
