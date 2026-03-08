@@ -57,7 +57,7 @@ body {
   gap: 0;
   /* background-color: var(--color-neutral-100); */
   color: var(--color-primary-100);
-  background-color: var(--color-primary-800) !important;
+  background-color: var(--color-primary-800) !important ;
   /* color: var(--color-primary-100); */
   text-shadow: 2px 1px 4px var(--color-neutral-600);
 }
