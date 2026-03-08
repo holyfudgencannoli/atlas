@@ -1,6 +1,5 @@
-import LoginPage from "~/pages/login/login.index";
+import HomePage from "~/pages/docs";
 import type { Route } from "./+types/home";
-import Dashboard from "~/pages/__protected/dashboard/dashboard.index";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -10,11 +9,10 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export function loader({ context }: Route.LoaderArgs) {
-  return { message: context.cloudflare.env.VALUE_FROM_CLOUDFLARE };
 }
 
 export default function Docs({ loaderData }: Route.ComponentProps) {
   return (
-    <Dashboard />
+    <HomePage />
   );
 }

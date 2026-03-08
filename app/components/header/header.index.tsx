@@ -31,18 +31,18 @@ export default function Header() {
         )}
         {!isSmall ? (
           <>
-            <NavLink className={styles.navLink} href="/">Home</NavLink>
-            <NavLink className={styles.navLink} href="/documentation">Docs</NavLink>
-            <NavLink className={styles.navLink} href="/pricing">Pricing</NavLink>
-            <NavLink className={styles.navLink} href="/login">Log In</NavLink>
+            <NavLink className={styles.navLink}>Home</NavLink>
+            <NavLink className={styles.navLink}>Docs</NavLink>
+            <NavLink className={styles.navLink}>Pricing</NavLink>
+            <NavLink className={styles.navLink}>Log In</NavLink>
           </>
 
         ) : isSmall && menuVisible ? (
           <div id={styles['mobile-menu']}>
-            <NavLink className={styles.navLink} href="/">Home</NavLink>
-            <NavLink className={styles.navLink} href="/documentation">Docs</NavLink>
-            <NavLink className={styles.navLink} href="/pricing">Pricing</NavLink>
-            <NavLink className={styles.navLink} href="/login">Log In</NavLink>
+            <NavLink className={styles.navLink}>Home</NavLink>
+            <NavLink className={styles.navLink}>Docs</NavLink>
+            <NavLink className={styles.navLink}>Pricing</NavLink>
+            <NavLink className={styles.navLink}>Log In</NavLink>
           </div>
         ) : (
           <></>

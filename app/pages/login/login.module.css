@@ -49,7 +49,7 @@
   margin-block: 2rem;
   font-size: 1rem;
   font-weight: bold;
-  width: 33% !important;
+  width: 85% !important;
   
 
 }
@@ -64,6 +64,7 @@
 .loginFormLabel {
   font-weight: bold;
   font-size: 1.25rem;
+
 }
 
 .loginFormControl:focus {

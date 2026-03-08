@@ -10,12 +10,6 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
-import Header from "./components/header/header.index";
-import Sidebar from "./components/sidebar/sidebar.index";
-import { AuthProvider } from "./hooks/auth-context";
-import { Col, Container, Row } from "react-bootstrap";
-import styles from './root.module.css'
-import ProtectedRoute from "./hooks/protected-route";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -47,9 +41,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <AuthProvider>
-          {children}
-        </AuthProvider>
+        {children}
         <ScrollRestoration />
         <Scripts />
       </body>
